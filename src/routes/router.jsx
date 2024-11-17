@@ -6,6 +6,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import ErrorPage from "../components/ErrorPage";
 import UpdateProfile from "../pages/UpdateProfile";
+import UserProfile from "../pages/UserProfile";
+import Details from "../components/Details";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +22,20 @@ const router = createBrowserRouter([
       {
         path: "/updateProfile",
         element: <UpdateProfile></UpdateProfile>,
+      },
+      {
+        path: "/userProfile",
+        element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "/details/:id",
+        element: <Details></Details>,
+        loader: async({params})=> {
+          const res = await fetch('../apiData.json')
+          const data = await res.json()
+          const singleData = data.find(data=>data.id==params.id)
+          return singleData
+        }
       },
     ],
   },

@@ -12,9 +12,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/updateProfile">Update Profile</NavLink>
       </li>
-      {/* <li>
-        <NavLink to='/reg'>reg</NavLink>
-      </li> */}
+      <li>
+        <NavLink to='/userProfile'>User profile</NavLink>
+      </li>
     </>
   );
 
