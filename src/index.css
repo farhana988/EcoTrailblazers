@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tooltip on hover */
+.user-info:hover .user-name {
+    opacity: 1;
+  }
+  

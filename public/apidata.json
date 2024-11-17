@@ -1,0 +1,311 @@
+[
+  {
+    "adventure_title": "Mountain Trekking in the Andes",
+    "image": "https://example.com/images/andes-trek.jpg",
+    "id": "01",
+    "category_name": "Mountain Treks",
+    "short_description": "Embark on a thrilling mountain trek through the stunning Andes, where you'll witness breathtaking landscapes and learn about local culture.",
+    "adventure_cost": 1200,
+    "booking_availability": "Available year-round",
+    "location": "Andes Mountains, Peru",
+    "duration": "7 days",
+    "adventure_level": "Advanced",
+    "included_items": [
+      "Certified guide",
+      "Eco-friendly camping gear",
+      "Meals (vegetarian options available)",
+      "Transport to and from trailheads"
+    ],
+    "eco_friendly_features": [
+      "Zero-waste policy",
+      "Carbon offset program for travel emissions",
+      "Local community-based tourism"
+    ],
+    "max_group_size": 12,
+    "special_instructions": [
+      "Pack light and biodegradable toiletries",
+      "Respect local wildlife and indigenous cultures"
+    ]
+  },
+  {
+    "adventure_title": "Scuba Diving in the Great Barrier Reef",
+    "image": "https://example.com/images/reef-diving.jpg",
+    "id": "02",
+    "category_name": "Ocean Dives",
+    "short_description": "Explore the wonders of the Great Barrier Reef, one of the most biodiverse marine ecosystems in the world.",
+    "adventure_cost": 950,
+    "booking_availability": "Available all year",
+    "location": "Great Barrier Reef, Australia",
+    "duration": "3 days",
+    "adventure_level": "Intermediate",
+    "included_items": [
+      "PADI-certified diving instructor",
+      "Eco-friendly diving equipment",
+      "Underwater photography",
+      "Meals (vegetarian available)"
+    ],
+    "eco_friendly_features": [
+      "Reef-safe sunscreen",
+      "No-touch policy for marine life",
+      "Dive with conservation-focused organizations"
+    ],
+    "max_group_size": 8,
+    "special_instructions": [
+      "Dive only with certified instructors",
+      "Respect coral and marine life at all times"
+    ]
+  },
+  {
+    "adventure_title": "Safari in Maasai Mara",
+    "image": "https://example.com/images/maasai-mara-safari.jpg",
+    "id": "03",
+    "category_name": "Wildlife Safaris",
+    "short_description": "Experience the thrill of a wildlife safari in Kenya’s Maasai Mara, home to the iconic ‘Big Five’ and vibrant local culture.",
+    "adventure_cost": 2500,
+    "booking_availability": "Available from June to October",
+    "location": "Maasai Mara National Reserve, Kenya",
+    "duration": "5 days",
+    "adventure_level": "Easy to Moderate",
+    "included_items": [
+      "Safari guide",
+      "Game drives in eco-friendly vehicles",
+      "Traditional Maasai meals",
+      "Accommodations in eco-lodges"
+    ],
+    "eco_friendly_features": [
+      "Solar-powered accommodations",
+      "Sustainable wildlife management",
+      "Support for local Maasai communities"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Stay inside vehicle during game drives",
+      "Do not disturb the wildlife"
+    ]
+  },
+  {
+    "adventure_title": "Forest Expedition in the Amazon",
+    "image": "https://example.com/images/amazon-forest.jpg",
+    "id": "04",
+    "category_name": "Forest Expeditions",
+    "short_description": "Venture into the heart of the Amazon rainforest for an immersive exploration of the world's largest tropical ecosystem.",
+    "adventure_cost": 1800,
+    "booking_availability": "Available year-round",
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "6 days",
+    "adventure_level": "Advanced",
+    "included_items": [
+      "Local indigenous guide",
+      "Rainforest trekking equipment",
+      "Meals (organic and local)",
+      "Accommodation in eco-lodges"
+    ],
+    "eco_friendly_features": [
+      "Rainforest conservation efforts",
+      "Minimal environmental impact approach",
+      "Partnership with local communities"
+    ],
+    "max_group_size": 8,
+    "special_instructions": [
+      "Wear light, breathable clothing",
+      "Respect local tribes and traditions"
+    ]
+  },
+  {
+    "adventure_title": "Desert Exploration in Wadi Rum",
+    "image": "https://example.com/images/wadi-rum-desert.jpg",
+    "id": "05",
+    "category_name": "Desert Exploration",
+    "short_description": "Explore the vast, stunning deserts of Wadi Rum in Jordan, famous for its striking rock formations and ancient Bedouin culture.",
+    "adventure_cost": 1100,
+    "booking_availability": "Available from March to November",
+    "location": "Wadi Rum, Jordan",
+    "duration": "4 days",
+    "adventure_level": "Moderate",
+    "included_items": [
+      "Bedouin guide",
+      "4x4 desert jeep tours",
+      "Traditional Bedouin meals",
+      "Camping under the stars"
+    ],
+    "eco_friendly_features": [
+      "Use of renewable energy sources for camp",
+      "Leave no trace camping policy",
+      "Support for local Bedouin communities"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Bring a hat and sunglasses for sun protection",
+      "Do not disturb the desert wildlife"
+    ]
+  },
+
+  {
+    "adventure_title": "River Rafting in Costa Rica",
+    "image": "https://example.com/images/costa-rica-rafting.jpg",
+    "id": "06",
+    "category_name": "River Adventures",
+    "short_description": "Embark on an adrenaline-pumping whitewater rafting adventure through the lush rainforests and pristine rivers of Costa Rica.",
+    "adventure_cost": 850,
+    "booking_availability": "Available year-round",
+    "location": "Sarapiquí River, Costa Rica",
+    "duration": "3 days",
+    "adventure_level": "Intermediate",
+    "included_items": [
+      "Certified rafting guide",
+      "Rafting gear (helmet, lifejacket, paddle)",
+      "Accommodation in eco-lodges",
+      "Meals (organic, local produce)"
+    ],
+    "eco_friendly_features": [
+      "Support for local river conservation efforts",
+      "Eco-friendly rafting equipment",
+      "Zero-waste camp setup"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Wear quick-drying clothing",
+      "Bring biodegradable sunscreen"
+    ]
+  },
+  {
+    "adventure_title": "Camping in the Canadian Rockies",
+    "image": "https://example.com/images/canadian-rockies-camping.jpg",
+    "id": "07",
+    "category_name": "Camping Retreats",
+    "short_description": "Enjoy a peaceful and immersive camping experience in the heart of the Canadian Rockies, surrounded by majestic mountains and wildlife.",
+    "adventure_cost": 950,
+    "booking_availability": "Available June to September",
+    "location": "Banff National Park, Canada",
+    "duration": "5 days",
+    "adventure_level": "Easy to Moderate",
+    "included_items": [
+      "Eco-friendly camping gear",
+      "Local guide",
+      "Meals (vegetarian and non-vegetarian options)",
+      "Transport to/from campsite"
+    ],
+    "eco_friendly_features": [
+      "Leave no trace camping policy",
+      "Solar-powered lighting",
+      "Support for park conservation programs"
+    ],
+    "max_group_size": 12,
+    "special_instructions": [
+      "Pack warm layers, even in summer",
+      "Do not feed wildlife"
+    ]
+  },
+  {
+    "adventure_title": "Mangrove Kayaking in Thailand",
+    "image": "https://example.com/images/thailand-mangrove-kayaking.jpg",
+    "id": "08",
+    "category_name": "Mangrove Forest Expeditions",
+    "short_description": "Paddle through the serene mangrove forests of Thailand, exploring diverse ecosystems and observing local wildlife in a tranquil environment.",
+    "adventure_cost": 700,
+    "booking_availability": "Available year-round",
+    "location": "Phang Nga Bay, Thailand",
+    "duration": "2 days",
+    "adventure_level": "Easy",
+    "included_items": [
+      "Guided kayak tour",
+      "Kayaking equipment (paddle, life jacket)",
+      "Eco-lodge accommodations",
+      "Meals (local Thai cuisine)"
+    ],
+    "eco_friendly_features": [
+      "Minimal impact on fragile ecosystems",
+      "Educational programs on mangrove conservation",
+      "Partnership with local environmental NGOs"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Wear water shoes and sunscreen",
+      "Stay close to your guide for safety"
+    ]
+  },
+  {
+    "adventure_title": "Desert Trek and Star Gazing in Namibia",
+    "image": "https://example.com/images/namibia-desert.jpg",
+    "id": "09",
+    "category_name": "Desert Exploration",
+    "short_description": "Explore the otherworldly dunes of Namibia’s Sossusvlei Desert, and experience the awe-inspiring starry skies of the Southern Hemisphere.",
+    "adventure_cost": 1400,
+    "booking_availability": "Available from April to October",
+    "location": "Sossusvlei, Namibia",
+    "duration": "6 days",
+    "adventure_level": "Moderate",
+    "included_items": [
+      "Experienced desert guide",
+      "Camel and 4x4 vehicle transportation",
+      "Meals (organic, local ingredients)",
+      "Accommodation in eco-friendly desert camps"
+    ],
+    "eco_friendly_features": [
+      "Solar-powered accommodations",
+      "Low-impact travel practices",
+      "Support for desert conservation initiatives"
+    ],
+    "max_group_size": 8,
+    "special_instructions": [
+      "Bring a warm jacket for chilly nights",
+      "Be mindful of desert wildlife and plants"
+    ]
+  },
+  {
+    "adventure_title": "Wildlife Tracking in Madagascar",
+    "image": "https://example.com/images/madagascar-wildlife-tracking.jpg",
+    "id": "10",
+    "category_name": "Wildlife Safaris",
+    "short_description": "Venture into the unique ecosystems of Madagascar, tracking endangered species like lemurs, chameleons, and rare birds in their natural habitats.",
+    "adventure_cost": 2200,
+    "booking_availability": "Available from April to November",
+    "location": "Ranomafana National Park, Madagascar",
+    "duration": "8 days",
+    "adventure_level": "Advanced",
+    "included_items": [
+      "Local wildlife expert guide",
+      "Tracking and hiking equipment",
+      "Meals (local, sustainable ingredients)",
+      "Accommodation in eco-lodges"
+    ],
+    "eco_friendly_features": [
+      "Focus on wildlife preservation",
+      "Support for local community-led conservation",
+      "Low-impact, responsible tourism practices"
+    ],
+    "max_group_size": 6,
+    "special_instructions": [
+      "Wear sturdy hiking shoes",
+      "Do not touch wildlife or disrupt their habitats"
+    ]
+  },
+  {
+    "adventure_title": "Eco Trekking in New Zealand",
+    "image": "https://example.com/images/nz-eco-trekking.jpg",
+    "id": "11",
+    "category_name": "Mountain Treks",
+    "short_description": "Explore New Zealand's breathtaking landscapes, from alpine peaks to lush forests, with a focus on sustainable and eco-friendly travel.",
+    "adventure_cost": 1600,
+    "booking_availability": "Available year-round",
+    "location": "Fiordland National Park, New Zealand",
+    "duration": "7 days",
+    "adventure_level": "Moderate to Advanced",
+    "included_items": [
+      "Eco-certified trekking guide",
+      "Camping gear (biodegradable products)",
+      "Meals (sustainable, local sourcing)",
+      "Transport within the national park"
+    ],
+    "eco_friendly_features": [
+      "Sustainable tourism practices",
+      "Carbon offset program",
+      "Contributions to New Zealand’s conservation efforts"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Bring waterproof clothing and boots",
+      "Respect the cultural heritage of the land"
+    ]
+  }
+]

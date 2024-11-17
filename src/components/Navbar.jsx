@@ -1,19 +1,20 @@
 // import React from 'react';
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
   const links = (
     <>
-    <li>
-        <NavLink to='/'>Home</NavLink>
+      <li>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to='/log'>login</NavLink>
+        <NavLink to="/updateProfile">Update Profile</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to='/reg'>reg</NavLink>
-      </li>
+      </li> */}
     </>
   );
 
@@ -44,15 +45,27 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+      
+        <Link to='/' className="font-bold text-2xl">EcoTrailblazers</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-4">
-            {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1 gap-4">{links}</ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4">
+        <div className="user-info relative ">
+          <img
+            src=""
+            alt=""
+            className="w-12 h-12 rounded-full"
+          />
+          <div className="user-name absolute bottom--10 left-0 w-full text-xs  text-center
+            font-semibold p-2 rounded opacity-0 transition-opacity duration-300">
+            abc
+          </div>
+        </div>
+        <Link to="/login" className="btn btn-primary">
+          Login
+        </Link>
       </div>
     </div>
   );
