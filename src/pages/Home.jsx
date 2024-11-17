@@ -2,12 +2,15 @@
 
 import Banner from "../components/Banner";
 
+import Cards from "../components/Cards";
+
 const Home = () => {
     return (
         <div>
          
              <Banner></Banner>
-             <h2 className="mt-96"></h2>
+             <Cards></Cards>
+             
         </div>
     );
 };
