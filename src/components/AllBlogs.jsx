@@ -5,7 +5,7 @@ import Blog from "./Blog";
 
 const AllBlogs = () => {
     const data =useLoaderData()
-    console.log(data)
+
     return (
         <div className="min-h-screen bg-gray-100 py-10">
         <div className="container mx-auto">

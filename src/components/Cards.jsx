@@ -6,9 +6,7 @@ import { useState } from "react";
 
 
 const Cards = () => {
-    const data = useLoaderData()
-    const cardData = data.cardData
-    // console.log(cardData)
+    const {cardData }= useLoaderData()
 
     const [cardCount,setCardCount]=useState(4)
     const showMore =()=>{
@@ -25,7 +23,7 @@ const Cards = () => {
            </div>
            
           {
-            cardCount < data.length && 
+            cardCount < cardData.length && 
            (<div className="flex justify-end mt-4 mr-5 md:mr-0 lg:mr-20">
              <button 
              onClick={showMore}

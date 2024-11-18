@@ -4,7 +4,7 @@
 const Blog = ({ blog }) => {
     const {image,title,excerpt}=blog
     return (
-       <div className="flex justify-center">
+       <div className="flex justify-center ">
       <div className="card w-96 bg-base-100 shadow-xl flex flex-col">
         <figure className="flex-shrink-0">
           <img src={image} alt={title} className="h-48 w-full object-cover" />
