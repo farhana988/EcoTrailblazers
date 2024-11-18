@@ -36,6 +36,14 @@ const AuthProvider = ({children}) => {
     return signInWithPopup(auth, googleProvider);
   };
 
+
+//   logout
+
+const handleSignOut = ()=>{
+  setLoading(true)
+    signOut(auth)
+}
+
 //   update profile
 
 const manageProfile = (name,image)=>{
@@ -45,12 +53,7 @@ const manageProfile = (name,image)=>{
     })
 }
 
-//   logout
 
-const handleSignOut = ()=>{
-  setLoading(true)
-    signOut(auth)
-}
 
   const authInfo = {
     user,

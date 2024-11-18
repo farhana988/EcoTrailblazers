@@ -1,9 +1,10 @@
+
 // import React from 'react';
 
 const UpdateProfile = () => {
     return (
         <div>
-             UpdateProfile
+            UpdateProfile
         </div>
     );
 };
