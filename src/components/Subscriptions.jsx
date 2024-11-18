@@ -9,7 +9,7 @@ const Subscriptions = () => {
  
   return (
     <div>
-      <div className="min-h-screen  p-8">
+      <div className=" p-8">
         <h1 className="text-4xl font-bold text-center mb-6">
           Your Subscription Plans
         </h1>
