@@ -13,7 +13,7 @@ const UserProfile = () => {
   }
 
   const handleUpdateProfile = () => {
-    // Navigate to the Update Profile page
+   
     navigate('/updateProfile');
   };
 
