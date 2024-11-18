@@ -24,10 +24,10 @@ const router = createBrowserRouter([
           const cardRes= await fetch("../apiData.json")
           const cardData= await cardRes.json()
 
-          const blogRes = await fetch("./blogs.json")
+          const blogRes = await fetch("../blogs.json")
           const blogData =await blogRes.json()
 
-          const subsRes =await fetch ("./subscription.json")
+          const subsRes =await fetch ("../subscription.json")
           const subsData = await subsRes.json()
 
           // console.log(subsData)
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
       {
         path: "/allBlogs",
         element: <AllBlogs></AllBlogs>,
-        loader:()=> fetch("./blogs.json")
+        loader:()=> fetch("../blogs.json")
       },
       {
         path: "/login",

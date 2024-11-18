@@ -27,10 +27,12 @@ const AuthProvider = ({children}) => {
   };
   // sign in
   const signIn = (email, password) => {
+    setLoading(true)
     return signInWithEmailAndPassword(auth, email, password);
   };
   //  google sign in
   const signInWithGoogle = () => {
+    setLoading(true)
     return signInWithPopup(auth, googleProvider);
   };
 
@@ -46,6 +48,7 @@ const manageProfile = (name,image)=>{
 //   logout
 
 const handleSignOut = ()=>{
+  setLoading(true)
     signOut(auth)
 }
 
