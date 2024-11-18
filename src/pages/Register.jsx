@@ -3,21 +3,39 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useContext } from "react";
+import { authContext } from "../provider/AuthProvider";
+
 
 const Register = () => {
+  const {registerUser} = useContext(authContext)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    // console.log(email, password);
+
+    registerUser(email,password)
+    .then(res=>{
+      console.log(res)
+    })
+  };
   return (
     <div>
       <Navbar></Navbar>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <form className="card-body">
+            <form onSubmit={handleSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
                 <input
                   type="name"
+                  name="name"
                   placeholder="name"
                   className="input input-bordered"
                   required
@@ -29,9 +47,21 @@ const Register = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
                   required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo Url</span>
+                </label>
+                <input
+                  type="photoUrl"
+                  name="photoUrl"
+                  placeholder="photoUrl"
+                  className="input input-bordered"
                 />
               </div>
               <div className="form-control">
@@ -40,6 +70,7 @@ const Register = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
