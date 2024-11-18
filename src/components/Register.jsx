@@ -1,28 +1,47 @@
 // import React from 'react';
 
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { useContext } from "react";
+
+import { useContext, useState } from "react";
 import { authContext } from "../provider/AuthProvider";
 
 const Register = () => {
-  const { registerUser } = useContext(authContext);
+  const { registerUser,manageProfile } = useContext(authContext);
+
+  const [error,setError]=useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setError('')
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const name = e.target.name.value;
+    const image = e.target.image.value;
 
     // console.log(email, password);
 
-    registerUser(email, password).then((res) => {
-      console.log(res);
+
+    if(password.length<6){
+      setError("Password must contain at least 6 characters")
+      return 
+    }
+    if(!/[a-z]/.test(password)){
+      setError("Password must contain at least one lowercase letter")
+      return;
+  }
+  if(!/[A-Z]/.test(password)){
+      setError("Password must contain at least one uppercase letter")
+      return;
+  }
+
+    registerUser(email, password).then(res => {
+      manageProfile(name,image)
+      console.log(res)
     });
   };
   return (
     <div>
-      <Navbar></Navbar>
+      
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl">
@@ -66,9 +85,10 @@ const Register = () => {
                 </label>
                 <input
                   type="photoUrl"
-                  name="photoUrl"
+                  name="image"
                   placeholder="photoUrl"
                   className="input input-bordered"
+                  required
                 />
               </div>
               <div className="form-control">
@@ -97,10 +117,13 @@ const Register = () => {
                 </Link>
               </h2>
             </form>
+            {
+              error && <p className="text-red-900">{error}</p>
+            }
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      
     </div>
   );
 };

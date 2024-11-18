@@ -2,13 +2,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
+
 import ErrorPage from "../components/ErrorPage";
 import UpdateProfile from "../pages/UpdateProfile";
 import UserProfile from "../pages/UserProfile";
 import Details from "../components/Details";
 import AllBlogs from "../components/AllBlogs";
+import PrivateRoute from "./PrivateRoute";
+import Login from "../components/Login";
+import Register from "../components/Register";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,11 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/userProfile",
-        element: <UserProfile></UserProfile>,
+        element:<PrivateRoute> <UserProfile></UserProfile></PrivateRoute>,
       },
       {
         path: "/details/:id",
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: async({params})=> {
           const res = await fetch('../apiData.json')
           const data = await res.json()
@@ -55,16 +57,17 @@ const router = createBrowserRouter([
         element: <AllBlogs></AllBlogs>,
         loader:()=> fetch("./blogs.json")
       },
+      {
+        path: "/login",
+        element:<Login></Login>,
+      },
+      {
+        path: "/reg",
+        element:<Register></Register>,
+      },
     ],
   },
-  {
-    path: "/login",
-    element: <Login></Login>,
-  },
-  {
-    path: "/reg",
-    element: <Register></Register>,
-  },
+ 
 ]);
 
 export default router;
