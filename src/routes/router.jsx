@@ -8,6 +8,7 @@ import ErrorPage from "../components/ErrorPage";
 import UpdateProfile from "../pages/UpdateProfile";
 import UserProfile from "../pages/UserProfile";
 import Details from "../components/Details";
+import AllBlogs from "../components/AllBlogs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +18,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch("../apiData.json")
+        loader: async ()=> {
+          const cardRes= await fetch("../apiData.json")
+          const cardData= await cardRes.json()
+
+          const blogRes = await fetch("./blogs.json")
+          const blogData =await blogRes.json()
+
+
+          return{cardData, blogData}
+        }
       },
       {
         path: "/updateProfile",
@@ -36,6 +46,11 @@ const router = createBrowserRouter([
           const singleData = data.find(data=>data.id==params.id)
           return singleData
         }
+      },
+      {
+        path: "/allBlogs",
+        element: <AllBlogs></AllBlogs>,
+        loader:()=> fetch("./blogs.json")
       },
     ],
   },

@@ -7,7 +7,8 @@ import { useState } from "react";
 
 const Cards = () => {
     const data = useLoaderData()
-    // console.log(data)
+    const cardData = data.cardData
+    // console.log(cardData)
 
     const [cardCount,setCardCount]=useState(4)
     const showMore =()=>{
@@ -18,7 +19,7 @@ const Cards = () => {
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto
            ">
            {
-             data.slice(0,cardCount).map(singleData => (<Card key={singleData.id} singleData={singleData}></Card>))
+             cardData.slice(0,cardCount).map(singleData => (<Card key={singleData.id} singleData={singleData}></Card>))
            }
           
            </div>
@@ -31,7 +32,8 @@ const Cards = () => {
              className="btn">
                 Show More
             </button>
-           </div>)}
+           </div>)
+          }
         </div>
     );
 };
