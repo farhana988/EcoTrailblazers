@@ -33,7 +33,7 @@ const Cards = () => {
              <button 
              onClick={showMore}
              className="
-             btn bg-primary ring-2 ring-offset-4 ring-primary text-white lg:text-xl">
+             btn bg-primary ring-2 ring-offset-4 ring-primary text-white lg:text-xl mt-5">
                 Show More
             </button>
            </div>)

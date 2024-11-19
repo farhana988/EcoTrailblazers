@@ -8,7 +8,7 @@ function Card({ singleData }) {
   const { adventure_title, image, eco_friendly_features, id } = singleData;
   return (
     <div
-      className="card card-compact  shadow-xl  bg-red-50"
+      className="card card-compact  shadow-xl bg-white"
     >
       <figure>
         <img
@@ -29,7 +29,7 @@ function Card({ singleData }) {
         </ul>
         
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">
+          <button className="btn bg-primary text-white lg:text-xl">
             <Link to={`/details/${id}`}>Explore Now</Link>
           </button>
         </div>

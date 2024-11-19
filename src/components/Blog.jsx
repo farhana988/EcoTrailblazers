@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 // import React from 'react';
 
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 const Blog = ({ blog }) => {
     const {image,title,excerpt}=blog
     return (
@@ -13,7 +15,9 @@ const Blog = ({ blog }) => {
           <h2 className="card-title">{title}</h2>
           <p className="text-sm text-gray-500">{excerpt}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Read More</button>
+            <button className="shadow-2xl shadow-primary border-2 rounded-2xl px-4 flex items-center
+            gap-3 text-xl font-bold">
+              Read More<FaLongArrowAltRight /></button>
           </div>
         </div>
       </div>

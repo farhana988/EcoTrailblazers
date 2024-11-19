@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import Heading from "./Heading";
+
+import { MdTimer } from "react-icons/md";
 
 const Details = () => {
   const {   image,
@@ -32,14 +35,18 @@ const Details = () => {
     }
   };
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-20 px-6">
-    <div className="card card-compact shadow-xl bg-white rounded-lg overflow-hidden">
+    <div className=" flex flex-col items-center justify-center bg-gray-100 py-20 px-6">
+      <Heading
+      title={' Details Page'}
+      subtitle={'Provides in-depth information about each eco-adventure experience, including trip highlights, sustainability practices, pricing, and itinerary details. '}
+      ></Heading>
+    <div className="card card-compact shadow-2xl shadow-primary bg-white rounded-2xl overflow-hidden">
       <figure>
         <img className="w-full h-60 md:h-96 lg:h-[500px] object-cover" src={image} alt={adventure_title} />
       </figure>
       <div className="card-body ">
         <div className="text-center space-y-3">
-        <h2 className="text-2xl lg:text-5xl font-bold text-gray-800">{adventure_title}</h2>
+        <h2 className="text-2xl lg:text-5xl lg:px-20 font-bold text-gray-800">{adventure_title}</h2>
         <p className="text-lg text-gray-600">{short_description}</p>
         </div>
 
@@ -88,7 +95,8 @@ const Details = () => {
         </div>
 
         <div className="card-actions justify-end mt-6">
-          <button onClick={handleTalkWithExpert} className=" btn btn-primary text-2xl">
+          <button onClick={handleTalkWithExpert} 
+          className=" btn bg-primary ring-2 ring-offset-4 ring-primary text-white lg:text-xl m-5">
             Talk with Expert
           </button>
         </div>
@@ -96,15 +104,20 @@ const Details = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="modal modal-open">
-          <div className="modal-box text-center">
-            <h2 className="text-3xl font-bold my-4">Consultation Hours</h2>
-            <p className="text-slate-500 px-6">
+        <div className="modal modal-open bg-green-50">
+          <div className="modal-box text-center relative py-10">
+            <div className="text-5xl text-primary left-16 top-12 absolute animate__animated 
+            animate__infinite animate__wobble animate__slower "> 
+            <MdTimer /></div>
+            <h2 className="text-3xl font-bold my-4 text-black">
+           Consultation Hours</h2>
+            <p className="text-slate-500 px-6 py-2">
               Our experts are available from 10:00 AM to 8:00 PM. Please come
               back during these hours for a consultation.
             </p>
             <div className="modal-action">
-              <button className="btn" onClick={() => setShowModal(false)}>
+              <button className="btn bg-primary text-white  ring-2 ring-offset-4 ring-primary lg:text-xl" 
+              onClick={() => setShowModal(false)}>
                 Close
               </button>
             </div>

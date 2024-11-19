@@ -24,7 +24,8 @@ const Blogs = () => {
         <div className="flex justify-end mt-4">
              <button 
              
-             className="btn bg-primary ring-2 ring-offset-4 ring-primary text-white   lg:text-xl">
+             className="btn bg-primary ring-2 ring-offset-4 ring-primary text-white
+              lg:text-xl mt-5">
                <Link to='/allBlogs'> Show More</Link>
             </button>
            </div>
