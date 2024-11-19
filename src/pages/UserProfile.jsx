@@ -3,7 +3,7 @@
 import { useContext } from "react";
 import { authContext } from "../provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
-
+import 'animate.css';
 const UserProfile = () => {
   const { user } = useContext(authContext);
   const navigate = useNavigate();
@@ -17,18 +17,22 @@ const UserProfile = () => {
   };
 
   return (
-    <div className="min-h-screen  bg-green-50 px-5">
-      <div className="flex flex-col justify-center items-center py-20 gap-6">
-        <h1 className="font-bold text-4xl md:text-5xl text-gray-800">Welcome,</h1>
+    <div className="py-32  lg:py-60  bg-green-50 px-5">
+      <div className="flex flex-col justify-center items-center gap-6">
+        <h1 className="font-bold text-4xl md:text-5xl text-primary animate__animated animate__heartBeat animate__infinite
+          animate__slower animate__delay-5s">
+            <i>Welcome</i>
+            </h1>
         <h2 className="text-xl md:text-3xl lg:text-4xl text-gray-600">
           {user.displayName || "User"}!
         </h2>
-        <div className="flex flex-col items-center bg-white shadow-xl rounded-lg p-8 w-full max-w-lg mt-8">
+        <div className="flex flex-col items-center  shadow-2xl shadow-primary rounded-2xl
+         py-20 w-full max-w-xl my-8 bg-white">
           <div className="flex justify-center mb-6">
             <img
               src={user.photoURL || "no photo"}
               alt="Profile"
-              className="w-32 h-32 rounded-full border-4 border-blue-500 object-cover"
+              className="ring-4 ring-offset-8 ring-primary w-32 h-32 rounded-full object-cover"
             />
           </div>
           <div className="text-center">
@@ -39,7 +43,7 @@ const UserProfile = () => {
           <div className="mt-8">
           <button
             onClick={handleUpdateProfile}
-            className="btn btn-primary px-6 py-3 text-white font-semibold text-lg bg-blue-500 hover:bg-blue-600 rounded-lg transition duration-300"
+            className="btn bg-primary mr-4 text-white   lg:text-xl ring-1 ring-offset-8 ring-primary"
           >
             Update Profile
           </button>

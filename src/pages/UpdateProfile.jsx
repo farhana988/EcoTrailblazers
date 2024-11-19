@@ -30,13 +30,15 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div>
-      <div className="hero  bg-green-50 min-h-screen">
+    <div className="bg-green-50 py-32  lg:py-60">
+      <h2 className="font-bold text-2xl md:text-5xl text-primary aa animate__animated animate__heartBeat animate__infinite
+          animate__slower animate__delay-5s text-center mb-6">
+             <i> Update Your Profile</i>
+            </h2>
+      <div className="hero   ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl">
-            <h2 className="text-3xl font-semibold text-center text-gray-800 my-6">
-              Update Your Profile
-            </h2>
+            
             <form
               className="card-body w-96 lg:w-[500px]"
               onSubmit={handleSubmit}
@@ -74,7 +76,8 @@ const UpdateProfile = () => {
               {error && <div className="text-red-500 mt-2">{error}</div>}
 
               <div className="form-control mt-6">
-                <button className="btn btn-primary px-6 py-3 text-white font-semibold text-lg bg-blue-500 hover:bg-blue-600 rounded-lg transition duration-300" type="submit">
+                <button 
+               className="btn bg-primary  text-white  ring-1 ring-offset-8 ring-primary lg:text-xl" type="submit">
                   Update Information
                 </button>
               </div>

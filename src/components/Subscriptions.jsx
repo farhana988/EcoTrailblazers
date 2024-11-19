@@ -3,6 +3,7 @@
 
 import { useLoaderData } from "react-router-dom";
 import Subscription from "./Subscription";
+import Heading from "./Heading";
 
 const Subscriptions = () => {
   const {subsData}= useLoaderData()
@@ -10,10 +11,12 @@ const Subscriptions = () => {
   return (
     <div>
       <div className="container mx-auto px-8 lg:px-0">
-        <h1 className="text-4xl font-bold text-center mb-6">
-          Your Subscription Plans
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+       
+        <Heading
+        title={'Subscription Plans'}
+        subtitle={'These subscription plans offer a mix of free and premium content, allowing users to choose based on their level of interest and commitment to eco-conscious travel.'}
+        ></Heading>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {subsData.map(subscription => (
             <Subscription key={subscription.id} subscription={subscription}></Subscription>
           ))}
