@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { authContext } from "../provider/AuthProvider";
 import googleLogo from "../assets/google-logo.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Login = () => {
   const { signIn, signInWithGoogle } = useContext(authContext);
@@ -38,9 +39,13 @@ const Login = () => {
   return (
     <div>
      
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl">
+      <div className="hero bg-base-200 py-32">
+        <div className="hero-content flex-col ">
+        <h2  className='text-3xl md:text-5xl lg:text-7xl font-bold mb-14 text-primary active
+        animate__animated animate__heartBeat animate__infinite
+          animate__slower animate__delay-5s'>Login Form</h2>
+          <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl shadow-primary">
+           
             <form onSubmit={handleSubmit} className="card-body w-96 lg:w-[500px]">
               <div className="form-control">
                 <label className="label">
@@ -79,18 +84,19 @@ const Login = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button className="btn btn-primary font-bold text-2xl">Login</button>
+                <button className="btn  bg-primary text-white  font-bold text-2xl">Login</button>
               </div>
 
-              <h2 className="text-lg mt-3">
+              <h2 className="text-lg mt-3  flex items-center gap-2">
                 No account yet?{" "}
                 <Link to="/reg">
-                  <span className="ml-5 text-blue-600 font-semibold">Register</span>
+                  <span className=" flex items-center gap-4  text-primary active text-2xl font-extrabold">
+                  <FaLongArrowAltRight />Register</span>
                 </Link>
               </h2>
             </form>
 
-            <div className="divider">OR</div>
+            <div className="divider text-primary font-bold text-xl">OR</div>
             <div className="space-y-4">
               <button
                 onClick={handleGoogleLogIn}

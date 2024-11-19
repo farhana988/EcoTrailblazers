@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { useContext, useState } from "react";
 import { authContext } from "../provider/AuthProvider";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Register = () => {
   const {setUser, registerUser,manageProfile } = useContext(authContext);
@@ -47,7 +48,10 @@ const Register = () => {
     <div>
       
       <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col">
+        <h2  className='text-3xl md:text-5xl lg:text-7xl font-bold mb-14 text-primary active
+        animate__animated animate__heartBeat animate__infinite
+          animate__slower animate__delay-5s'>Registration Form</h2>
           <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl">
             <form
               onSubmit={handleSubmit}
@@ -110,13 +114,13 @@ const Register = () => {
                 />
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Register</button>
+                <button className="btn  bg-primary text-white  font-bold text-2xl">Register</button>
               </div>
-              <h2 className="text-lg mt-3">
-                Already have an account?{" "}
+              <h2 className="text-lg mt-3 flex items-center gap-2">
+                Already have an account?
                 <Link to="/login">
-                  <span className=" ml-5  text-blue-600 font-semibold">
-                    Log in
+                  <span className=" flex items-center gap-4  text-primary active text-2xl font-extrabold">
+                  <FaLongArrowAltRight />Log in
                   </span>
                 </Link>
               </h2>

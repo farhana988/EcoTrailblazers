@@ -61,7 +61,7 @@ const Footer = () => {
         
       </footer>
       <div className="divider"></div>
-      <aside className="text-center text-xl">
+      <aside className="text-center text-xl text-black">
     <p >Copyright © {new Date().getFullYear()} - All right reserved by <i>EcoTrailblazers</i></p>
   </aside>
     </div>
