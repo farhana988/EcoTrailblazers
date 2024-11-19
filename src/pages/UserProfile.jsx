@@ -5,7 +5,7 @@ import { authContext } from "../provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 const UserProfile = () => {
-    const { user } = useContext(authContext);
+  const { user } = useContext(authContext);
   const navigate = useNavigate();
 
   if (!user) {
@@ -13,28 +13,39 @@ const UserProfile = () => {
   }
 
   const handleUpdateProfile = () => {
-   
-    navigate('/updateProfile');
+    navigate("/updateProfile");
   };
 
   return (
-    <div className="flex flex-col justify-center items-center my-20 gap-10">
-      <h2 className="text-5xl">Welcome, {user.displayName || 'User'}!</h2>
-      <div className="flex flex-col gap-3 card-body shadow-2xl rounded-2xl">
-        <div className="flex items-center justify-center">
-        <img
-          src={user.photoURL || 'default-avatar.png'}
-          alt="Profile"
-          className="w-20 rounded-full"
-        />
+    <div className="min-h-screen bg-gray-50">
+      <div className="flex flex-col justify-center items-center py-20 gap-6">
+        <h1 className="font-bold text-4xl md:text-5xl text-gray-800">Welcome,</h1>
+        <h2 className="text-xl md:text-3xl lg:text-4xl text-gray-600">
+          {user.displayName || "User"}!
+        </h2>
+        <div className="flex flex-col items-center bg-white shadow-xl rounded-lg p-8 w-full max-w-lg mt-8">
+          <div className="flex justify-center mb-6">
+            <img
+              src={user.photoURL || "no photo"}
+              alt="Profile"
+              className="w-32 h-32 rounded-full border-4 border-blue-500 object-cover"
+            />
+          </div>
+          <div className="text-center">
+            <p className="text-lg text-gray-700">Email: <span className="font-semibold">{user.email}</span></p>
+            <p className="text-lg text-gray-700">Name: <span className="font-semibold">{user.displayName || "No Name Set"}</span></p>
+          </div>
         </div>
-        <p >Email: {user.email}</p>
-        <p>Name: {user.displayName || 'No Name Set'}</p>
-        <p>Photo URL: {user.photoURL || 'No Photo Set'}</p>
+
+        <div className="mt-8">
+          <button
+            onClick={handleUpdateProfile}
+            className="btn btn-primary px-6 py-3 text-white font-semibold text-lg bg-blue-500 hover:bg-blue-600 rounded-lg transition duration-300"
+          >
+            Update Profile
+          </button>
+        </div>
       </div>
-      <button onClick={handleUpdateProfile} className="btn btn-primary">
-        Update Profile
-      </button>
     </div>
   );
 };
