@@ -37,10 +37,10 @@ const UpdateProfile = () => {
             </h2>
       <div className="hero   ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl">
+          <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl shadow-primary">
             
             <form
-              className="card-body w-96 lg:w-[500px]"
+              className="card-body w-96 lg:w-[500px] "
               onSubmit={handleSubmit}
             >
               <div className="form-control">

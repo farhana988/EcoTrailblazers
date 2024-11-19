@@ -3,25 +3,25 @@
 
 const Footer = () => {
   return (
-    <div className="bg-base-300 mt-20" >
+    <div className="bg-[#006a67cb] mt-20 py-10" >
       <footer className="footer  text-base-content p-10  container mx-auto">
         <nav>
-          <div className="lg:w-96">
-            <h4 className="text-xl font-bold">About Us</h4>
+          <div className=" w-full md:w-60 lg:w-96">
+            <h4 className="text-2xl text-black font-bold">About Us</h4>
             <p className="">
             we believe in the transformative power of nature. Our mission is to provide thrilling and immersive outdoor experiences that allow our customers to explore the beauty of the natural world, all while fostering environmental awareness and sustainability.
             </p>
           </div>
         </nav>
         <nav>
-          <h4 className="text-2xl font-bold">Quick Links</h4>
+          <h4 className="text-2xl font-bold text-black">Quick Links</h4>
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/faq">FAQ</a>
           <a href="/support">Support</a>
         </nav>
         <nav>
-          <h6 className="text-2xl font-bold" >Social</h6>
+          <h6 className="text-2xl font-bold text-black" >Social</h6>
           <div className="grid grid-flow-col gap-4">
             <a href="https://twitter.com" >
               <svg
@@ -58,7 +58,12 @@ const Footer = () => {
             </a>
           </div>
         </nav>
+        
       </footer>
+      <div className="divider"></div>
+      <aside className="text-center text-xl">
+    <p >Copyright © {new Date().getFullYear()} - All right reserved by <i>EcoTrailblazers</i></p>
+  </aside>
     </div>
   );
 };
