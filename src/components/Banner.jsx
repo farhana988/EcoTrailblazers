@@ -17,7 +17,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="carousel w-full my-20">
+    <div className="carousel w-full pt-20 bg-green-50">
       <div
         id="slide1"
         className={`carousel-item relative w-full transition-all duration-700 ${currentSlide === 1 ? 'block' : 'hidden'}`}

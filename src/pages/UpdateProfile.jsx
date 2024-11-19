@@ -31,7 +31,7 @@ const UpdateProfile = () => {
 
   return (
     <div>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero  bg-green-50 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-full max-w-5xl shrink-0 shadow-2xl">
             <h2 className="text-3xl font-semibold text-center text-gray-800 my-6">

@@ -8,7 +8,7 @@ function Card({ singleData }) {
   const { adventure_title, image, eco_friendly_features, id } = singleData;
   return (
     <div
-      className="card card-compact  shadow-xl mx-9 md:mx-0 lg:mx-0 bg-red-50"
+      className="card card-compact  shadow-xl  bg-red-50"
     >
       <figure>
         <img

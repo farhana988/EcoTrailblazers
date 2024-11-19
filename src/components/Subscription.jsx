@@ -135,8 +135,9 @@ const SubscriptionPlan = ({ subscription }) => {
           </li>
         </ul>
       </div>
-      <div className="mt-4">
-        <button className="btn bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 w-full">
+      <div className="mt-4 flex justify-end">
+        <button 
+        className="btn bg-primary ring-2 ring-offset-4 ring-primary text-white lg:text-xl">
           Buy this plan
         </button>
       </div>

@@ -9,7 +9,7 @@ const Subscriptions = () => {
  
   return (
     <div>
-      <div className=" p-8">
+      <div className="container mx-auto px-8 lg:px-0">
         <h1 className="text-4xl font-bold text-center mb-6">
           Your Subscription Plans
         </h1>

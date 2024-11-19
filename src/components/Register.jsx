@@ -1,13 +1,13 @@
 // import React from 'react';
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { useContext, useState } from "react";
 import { authContext } from "../provider/AuthProvider";
 
 const Register = () => {
-  const { registerUser,manageProfile } = useContext(authContext);
-
+  const {setUser, registerUser,manageProfile } = useContext(authContext);
+  const navigate = useNavigate(); 
   const [error,setError]=useState("")
 
   const handleSubmit = (e) => {
@@ -21,22 +21,26 @@ const Register = () => {
     // console.log(email, password);
 
 
-    if(password.length<6){
-      setError("Password must contain at least 6 characters")
-      return 
-    }
-    if(!/[a-z]/.test(password)){
-      setError("Password must contain at least one lowercase letter")
-      return;
-  }
-  if(!/[A-Z]/.test(password)){
-      setError("Password must contain at least one uppercase letter")
-      return;
-  }
-
-    registerUser(email, password).then(res => {
-      manageProfile(name,image)
-      console.log(res)
+    registerUser(email, password).then(() => {
+      manageProfile(name, image)
+        .then(() => {
+          
+          const updatedUser = {
+            email,
+            displayName: name,
+            photoURL: image,
+          };
+          setUser(updatedUser);  
+          navigate('/');
+        })
+        .catch((err) => {
+          setError("Profile update failed. Please try again.");
+          console.error(err);
+        });
+    })
+    .catch((err) => {
+      setError("Registration failed. Please try again.");
+      console.error(err);
     });
   };
   return (

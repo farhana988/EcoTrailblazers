@@ -1,182 +1,181 @@
 [
+  {
+    "id": 1,
+    "planName": "Premium Plus",
+    "status": "Active",
+    "renewalDate": "2024-12-15",
+    "billingCycle": "Monthly",
+    "trialPeriod": "14 days",
+    "benefits": [
+      "Access to exclusive content",
+      "Premium support",
+      "Early access to new features",
+      "No ads",
+      "Unlimited downloads",
+      "Offline viewing",
+      "Access to beta features"
+    ],
+    "price": "$19.99",
+    "usageStats": {
+      "storageUsed": "10GB",
+      "dataLimit": "100GB",
+      "devicesLinked": 3,
+      "videoHoursWatched": 45,
+      "downloads": 10,
+      "lastActivity": "2024-11-18"
+    },
+    "paymentMethod": "Credit Card",
+    "lastPaymentDate": "2024-11-15",
+    "nextBillingDate": "2024-12-15",
+    "subscriptionId": "abc123xyz",
+    "discounts": [
       {
-        "id":1,
-        "planName": "Premium Plus",
-        "status": "Active",
-        "renewalDate": "2024-12-15",
-        "billingCycle": "Monthly",
-        "trialPeriod": "14 days",
-        "benefits": [
-          "Access to exclusive content",
-          "Premium support",
-          "Early access to new features",
-          "No ads",
-          "Unlimited downloads",
-          "Offline viewing",
-          "Access to beta features"
-        ],
-        "price": "$19.99",
-        "usageStats": {
-          "storageUsed": "10GB",
-          "dataLimit": "100GB",
-          "devicesLinked": 3,
-          "videoHoursWatched": 45,
-          "downloads": 10,
-          "lastActivity": "2024-11-18"
-        },
-        "paymentMethod": "Credit Card",
-        "lastPaymentDate": "2024-11-15",
-        "nextBillingDate": "2024-12-15",
-        "subscriptionId": "abc123xyz",
-        "discounts": [
-          {
-            "discountCode": "BLACKFRIDAY20",
-            "amountOff": "20%",
-            "validUntil": "2024-12-01",
-            "description": "Black Friday Special"
-          }
-        ],
-        "promotionCodeUsed": "BLACKFRIDAY20",
-        "referralInfo": {
-          "referralCode": "REF123456",
-          "referredUsers": 5,
-          "bonusEarned": "$50",
-          "lastReferredUser": "user5678"
-        },
-        "customFeatures": {
-          "customTheme": "Dark Mode",
-          "personalizedRecommendations": true,
-          "prioritySupport": true
-        }
-      },
-      {
-        "id":2,
-        "planName": "Standard",
-        "status": "Inactive",
-        "renewalDate": "2024-11-30",
-        "billingCycle": "Yearly",
-        "trialPeriod": "7 days",
-        "benefits": [
-          "Access to basic content",
-          "Email support",
-          "Ads included",
-          "Access to community features"
-        ],
-        "price": "$99.99",
-        "usageStats": {
-          "storageUsed": "2GB",
-          "dataLimit": "50GB",
-          "devicesLinked": 1,
-          "videoHoursWatched": 10,
-          "downloads": 2,
-          "lastActivity": "2024-10-25"
-        },
-        "paymentMethod": "PayPal",
-        "lastPaymentDate": "2023-11-30",
-        "nextBillingDate": "2024-11-30",
-        "subscriptionId": "def456uvw",
-        "discounts": [],
-        "promotionCodeUsed": null,
-        "referralInfo": {
-          "referralCode": "REF654321",
-          "referredUsers": 2,
-          "bonusEarned": "$10",
-          "lastReferredUser": "user9876"
-        },
-        "customFeatures": {
-          "customTheme": "Light Mode",
-          "personalizedRecommendations": false,
-          "prioritySupport": false
-        }
-      },
-      {
-        "id":3,
-        "planName": "Free Plan",
-        "status": "Active",
-        "renewalDate": "N/A",
-        "billingCycle": "Free",
-        "trialPeriod": "N/A",
-        "benefits": [
-          "Access to limited content",
-          "Basic support",
-          "Ads included",
-          "Access to community features"
-        ],
-        "price": "$0.00",
-        "usageStats": {
-          "storageUsed": "500MB",
-          "dataLimit": "10GB",
-          "devicesLinked": 1,
-          "videoHoursWatched": 2,
-          "downloads": 0,
-          "lastActivity": "2024-11-18"
-        },
-        "paymentMethod": "N/A",
-        "lastPaymentDate": "N/A",
-        "nextBillingDate": "N/A",
-        "subscriptionId": "ghi789rst",
-        "discounts": [],
-        "promotionCodeUsed": null,
-        "referralInfo": {
-          "referralCode": "REF000000",
-          "referredUsers": 0,
-          "bonusEarned": "$0",
-          "lastReferredUser": null
-        },
-        "customFeatures": {
-          "customTheme": "Default",
-          "personalizedRecommendations": false,
-          "prioritySupport": false
-        }
-      },
-      {
-        "id":4,
-        "planName": "Family Plan",
-        "status": "Active",
-        "renewalDate": "2025-01-01",
-        "billingCycle": "Yearly",
-        "trialPeriod": "30 days",
-        "benefits": [
-          "Access to all Premium features",
-          "Multiple profiles",
-          "Family Sharing",
-          "Unlimited cloud storage",
-          "Priority support",
-          "Early access to events and content"
-        ],
-        "price": "$149.99",
-        "usageStats": {
-          "storageUsed": "50GB",
-          "dataLimit": "500GB",
-          "devicesLinked": 10,
-          "videoHoursWatched": 120,
-          "downloads": 30,
-          "lastActivity": "2024-11-18"
-        },
-        "paymentMethod": "Credit Card",
-        "lastPaymentDate": "2024-01-01",
-        "nextBillingDate": "2025-01-01",
-        "subscriptionId": "fam987zyx",
-        "discounts": [
-          {
-            "discountCode": "FAMILY20",
-            "amountOff": "20%",
-            "validUntil": "2024-12-01",
-            "description": "Family Plan Special"
-          }
-        ],
-        "promotionCodeUsed": "FAMILY20",
-        "referralInfo": {
-          "referralCode": "REF888999",
-          "referredUsers": 10,
-          "bonusEarned": "$100",
-          "lastReferredUser": "user1234"
-        },
-        "customFeatures": {
-          "customTheme": "Custom Colors",
-          "personalizedRecommendations": true,
-          "prioritySupport": true
-        }
+        "discountCode": "BLACKFRIDAY20",
+        "amountOff": "20%",
+        "validUntil": "2024-12-01",
+        "description": "Black Friday Special"
       }
-    ]
-  
+    ],
+    "promotionCodeUsed": "BLACKFRIDAY20",
+    "referralInfo": {
+      "referralCode": "REF123456",
+      "referredUsers": 5,
+      "bonusEarned": "$50",
+      "lastReferredUser": "user5678"
+    },
+    "customFeatures": {
+      "customTheme": "Dark Mode",
+      "personalizedRecommendations": true,
+      "prioritySupport": true
+    }
+  },
+  {
+    "id": 2,
+    "planName": "Standard",
+    "status": "Inactive",
+    "renewalDate": "2024-11-30",
+    "billingCycle": "Yearly",
+    "trialPeriod": "7 days",
+    "benefits": [
+      "Access to basic content",
+      "Email support",
+      "Ads included",
+      "Access to community features"
+    ],
+    "price": "$99.99",
+    "usageStats": {
+      "storageUsed": "2GB",
+      "dataLimit": "50GB",
+      "devicesLinked": 1,
+      "videoHoursWatched": 10,
+      "downloads": 2,
+      "lastActivity": "2024-10-25"
+    },
+    "paymentMethod": "PayPal",
+    "lastPaymentDate": "2023-11-30",
+    "nextBillingDate": "2024-11-30",
+    "subscriptionId": "def456uvw",
+    "discounts": [],
+    "promotionCodeUsed": null,
+    "referralInfo": {
+      "referralCode": "REF654321",
+      "referredUsers": 2,
+      "bonusEarned": "$10",
+      "lastReferredUser": "user9876"
+    },
+    "customFeatures": {
+      "customTheme": "Light Mode",
+      "personalizedRecommendations": false,
+      "prioritySupport": false
+    }
+  },
+  {
+    "id": 3,
+    "planName": "Free Plan",
+    "status": "Active",
+    "renewalDate": "N/A",
+    "billingCycle": "Free",
+    "trialPeriod": "N/A",
+    "benefits": [
+      "Access to limited content",
+      "Basic support",
+      "Ads included",
+      "Access to community features"
+    ],
+    "price": "$0.00",
+    "usageStats": {
+      "storageUsed": "500MB",
+      "dataLimit": "10GB",
+      "devicesLinked": 1,
+      "videoHoursWatched": 2,
+      "downloads": 0,
+      "lastActivity": "2024-11-18"
+    },
+    "paymentMethod": "N/A",
+    "lastPaymentDate": "N/A",
+    "nextBillingDate": "N/A",
+    "subscriptionId": "ghi789rst",
+    "discounts": [],
+    "promotionCodeUsed": null,
+    "referralInfo": {
+      "referralCode": "REF000000",
+      "referredUsers": 0,
+      "bonusEarned": "$0",
+      "lastReferredUser": null
+    },
+    "customFeatures": {
+      "customTheme": "Default",
+      "personalizedRecommendations": false,
+      "prioritySupport": false
+    }
+  },
+  {
+    "id": 4,
+    "planName": "Family Plan",
+    "status": "Active",
+    "renewalDate": "2025-01-01",
+    "billingCycle": "Yearly",
+    "trialPeriod": "30 days",
+    "benefits": [
+      "Access to all Premium features",
+      "Multiple profiles",
+      "Family Sharing",
+      "Unlimited cloud storage",
+      "Priority support",
+      "Early access to events and content"
+    ],
+    "price": "$149.99",
+    "usageStats": {
+      "storageUsed": "50GB",
+      "dataLimit": "500GB",
+      "devicesLinked": 10,
+      "videoHoursWatched": 120,
+      "downloads": 30,
+      "lastActivity": "2024-11-18"
+    },
+    "paymentMethod": "Credit Card",
+    "lastPaymentDate": "2024-01-01",
+    "nextBillingDate": "2025-01-01",
+    "subscriptionId": "fam987zyx",
+    "discounts": [
+      {
+        "discountCode": "FAMILY20",
+        "amountOff": "20%",
+        "validUntil": "2024-12-01",
+        "description": "Family Plan Special"
+      }
+    ],
+    "promotionCodeUsed": "FAMILY20",
+    "referralInfo": {
+      "referralCode": "REF888999",
+      "referredUsers": 10,
+      "bonusEarned": "$100",
+      "lastReferredUser": "user1234"
+    },
+    "customFeatures": {
+      "customTheme": "Custom Colors",
+      "personalizedRecommendations": true,
+      "prioritySupport": true
+    }
+  }
+]

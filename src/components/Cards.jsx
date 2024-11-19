@@ -3,6 +3,7 @@
 import {  useLoaderData } from "react-router-dom";
 import Card from "./Card";
 import { useState } from "react";
+import Heading from "./Heading";
 
 
 const Cards = () => {
@@ -13,10 +14,11 @@ const Cards = () => {
         setCardCount(prevCount=> prevCount+3)
     }
     return (
-        <div>
-          <h2  className="text-4xl font-bold text-center mb-6">
-            Adventure Experiences
-          </h2>
+        <div className="px-8 lg:px-0">
+         <Heading
+         title={'Adventure Experiences'}
+         subtitle={'Highlights a curated list of eco-friendly travel activities, including mountain treks, ocean dives, and safaris, each focusing on sustainability and conservation. Detailed information on each experience includes itineraries, sustainability practices, and the environmental impact, ensuring responsible and memorable adventures.'}
+         ></Heading>
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 container mx-auto
             ">
            {
@@ -30,7 +32,8 @@ const Cards = () => {
            (<div className="flex justify-end mt-4 mr-5 md:mr-0 lg:mr-20">
              <button 
              onClick={showMore}
-             className="btn">
+             className="
+             btn bg-primary ring-2 ring-offset-4 ring-primary text-white lg:text-xl">
                 Show More
             </button>
            </div>)
