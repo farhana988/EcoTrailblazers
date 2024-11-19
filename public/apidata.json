@@ -1,7 +1,7 @@
 [
   {
     "adventure_title": "Mountain Trekking in the Andes",
-    "image": "https://example.com/images/andes-trek.jpg",
+    "image": "https://i.ibb.co.com/HxbfssZ/Mountain-Trekking-in-the-Andes.webp",
     "id": "01",
     "category_name": "Mountain Treks",
     "short_description": "Embark on a thrilling mountain trek through the stunning Andes, where you'll witness breathtaking landscapes and learn about local culture.",
@@ -29,7 +29,7 @@
   },
   {
     "adventure_title": "Scuba Diving in the Great Barrier Reef",
-    "image": "https://example.com/images/reef-diving.jpg",
+    "image": "https://i.ibb.co.com/2dZtdNj/Scuba-Diving-in-the-Great-Barrier-Reef.jpg",
     "id": "02",
     "category_name": "Ocean Dives",
     "short_description": "Explore the wonders of the Great Barrier Reef, one of the most biodiverse marine ecosystems in the world.",
@@ -57,7 +57,7 @@
   },
   {
     "adventure_title": "Safari in Maasai Mara",
-    "image": "https://example.com/images/maasai-mara-safari.jpg",
+    "image": "https://i.ibb.co.com/t8hHcFq/Safari-in-Maasai-Mara.png",
     "id": "03",
     "category_name": "Wildlife Safaris",
     "short_description": "Experience the thrill of a wildlife safari in Kenya’s Maasai Mara, home to the iconic ‘Big Five’ and vibrant local culture.",
@@ -85,7 +85,7 @@
   },
   {
     "adventure_title": "Forest Expedition in the Amazon",
-    "image": "https://example.com/images/amazon-forest.jpg",
+    "image": "https://i.ibb.co.com/5RjcBqQ/Forest-Expedition-in-the-Amazon.jpg",
     "id": "04",
     "category_name": "Forest Expeditions",
     "short_description": "Venture into the heart of the Amazon rainforest for an immersive exploration of the world's largest tropical ecosystem.",
@@ -113,7 +113,7 @@
   },
   {
     "adventure_title": "Desert Exploration in Wadi Rum",
-    "image": "https://example.com/images/wadi-rum-desert.jpg",
+    "image": "https://i.ibb.co.com/rd1tt0f/Desert-Exploration-in-Wadi-Rum.jpg",
     "id": "05",
     "category_name": "Desert Exploration",
     "short_description": "Explore the vast, stunning deserts of Wadi Rum in Jordan, famous for its striking rock formations and ancient Bedouin culture.",
@@ -142,7 +142,7 @@
 
   {
     "adventure_title": "River Rafting in Costa Rica",
-    "image": "https://example.com/images/costa-rica-rafting.jpg",
+    "image": "https://i.ibb.co.com/D5XQsnz/River-Rafting-in-Costa-Rica.jpg",
     "id": "06",
     "category_name": "River Adventures",
     "short_description": "Embark on an adrenaline-pumping whitewater rafting adventure through the lush rainforests and pristine rivers of Costa Rica.",
@@ -170,7 +170,7 @@
   },
   {
     "adventure_title": "Camping in the Canadian Rockies",
-    "image": "https://example.com/images/canadian-rockies-camping.jpg",
+    "image": "https://i.ibb.co.com/ccWnS9r/Camping-in-the-Canadian-Rockies.jpg",
     "id": "07",
     "category_name": "Camping Retreats",
     "short_description": "Enjoy a peaceful and immersive camping experience in the heart of the Canadian Rockies, surrounded by majestic mountains and wildlife.",
@@ -198,7 +198,7 @@
   },
   {
     "adventure_title": "Mangrove Kayaking in Thailand",
-    "image": "https://example.com/images/thailand-mangrove-kayaking.jpg",
+    "image": "https://i.ibb.co.com/PtPqs9K/Mangrove-Kayaking-in-Thailand.jpg",
     "id": "08",
     "category_name": "Mangrove Forest Expeditions",
     "short_description": "Paddle through the serene mangrove forests of Thailand, exploring diverse ecosystems and observing local wildlife in a tranquil environment.",
@@ -226,7 +226,7 @@
   },
   {
     "adventure_title": "Desert Trek and Star Gazing in Namibia",
-    "image": "https://example.com/images/namibia-desert.jpg",
+    "image": "https://i.ibb.co.com/C5CDvR2/Desert-Trek-and-Star-Gazing-in-Namibia.jpg",
     "id": "09",
     "category_name": "Desert Exploration",
     "short_description": "Explore the otherworldly dunes of Namibia’s Sossusvlei Desert, and experience the awe-inspiring starry skies of the Southern Hemisphere.",
@@ -251,61 +251,7 @@
       "Bring a warm jacket for chilly nights",
       "Be mindful of desert wildlife and plants"
     ]
-  },
-  {
-    "adventure_title": "Wildlife Tracking in Madagascar",
-    "image": "https://example.com/images/madagascar-wildlife-tracking.jpg",
-    "id": "10",
-    "category_name": "Wildlife Safaris",
-    "short_description": "Venture into the unique ecosystems of Madagascar, tracking endangered species like lemurs, chameleons, and rare birds in their natural habitats.",
-    "adventure_cost": 2200,
-    "booking_availability": "Available from April to November",
-    "location": "Ranomafana National Park, Madagascar",
-    "duration": "8 days",
-    "adventure_level": "Advanced",
-    "included_items": [
-      "Local wildlife expert guide",
-      "Tracking and hiking equipment",
-      "Meals (local, sustainable ingredients)",
-      "Accommodation in eco-lodges"
-    ],
-    "eco_friendly_features": [
-      "Focus on wildlife preservation",
-      "Support for local community-led conservation",
-      "Low-impact, responsible tourism practices"
-    ],
-    "max_group_size": 6,
-    "special_instructions": [
-      "Wear sturdy hiking shoes",
-      "Do not touch wildlife or disrupt their habitats"
-    ]
-  },
-  {
-    "adventure_title": "Eco Trekking in New Zealand",
-    "image": "https://example.com/images/nz-eco-trekking.jpg",
-    "id": "11",
-    "category_name": "Mountain Treks",
-    "short_description": "Explore New Zealand's breathtaking landscapes, from alpine peaks to lush forests, with a focus on sustainable and eco-friendly travel.",
-    "adventure_cost": 1600,
-    "booking_availability": "Available year-round",
-    "location": "Fiordland National Park, New Zealand",
-    "duration": "7 days",
-    "adventure_level": "Moderate to Advanced",
-    "included_items": [
-      "Eco-certified trekking guide",
-      "Camping gear (biodegradable products)",
-      "Meals (sustainable, local sourcing)",
-      "Transport within the national park"
-    ],
-    "eco_friendly_features": [
-      "Sustainable tourism practices",
-      "Carbon offset program",
-      "Contributions to New Zealand’s conservation efforts"
-    ],
-    "max_group_size": 10,
-    "special_instructions": [
-      "Bring waterproof clothing and boots",
-      "Respect the cultural heritage of the land"
-    ]
   }
+  
+  
 ]

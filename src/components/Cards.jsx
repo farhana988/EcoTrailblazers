@@ -8,14 +8,17 @@ import { useState } from "react";
 const Cards = () => {
     const {cardData }= useLoaderData()
 
-    const [cardCount,setCardCount]=useState(4)
+    const [cardCount,setCardCount]=useState(3)
     const showMore =()=>{
-        setCardCount(prevCount=> prevCount+4)
+        setCardCount(prevCount=> prevCount+3)
     }
     return (
         <div>
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto
-           items-center justify-center lg:pl-5">
+          <h2  className="text-4xl font-bold text-center mb-6">
+            Adventure Experiences
+          </h2>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 container mx-auto
+            ">
            {
              cardData.slice(0,cardCount).map(singleData => (<Card key={singleData.id} singleData={singleData}></Card>))
            }
