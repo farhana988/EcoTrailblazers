@@ -17,18 +17,21 @@ const Login = () => {
 
     signIn(email, password)
       .then((res) => {
-        navigate(location.state?.from); 
+        navigate(location.state?.from || '/'); 
         console.log(res);
       })
       .catch((err) => {
-        setError(err.message);
+        setError(err.message || 'Something went wrong. Please try again.');
       });
   };
 
   const handleGoogleLogIn = () => {
     signInWithGoogle().then((res) => {
       console.log(res);
-      navigate(location.state?.from );
+      navigate(location.state?.from || '/');
+    })
+    .catch((err) => {
+      setError(err.message || 'Something went wrong with Google login.');
     });
   };
 
