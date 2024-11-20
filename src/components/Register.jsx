@@ -1,13 +1,14 @@
 // import React from 'react';
 
 import { Link, useNavigate } from "react-router-dom";
-
+import googleLogo from "../assets/google-logo.png";
 import { useContext, useState } from "react";
 import { authContext } from "../provider/AuthProvider";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { toast, Zoom } from "react-toastify";
 
 const Register = () => {
-  const {setUser, registerUser,manageProfile } = useContext(authContext);
+  const {setUser, registerUser,manageProfile,signInWithGoogle } = useContext(authContext);
   const navigate = useNavigate(); 
   const [error,setError]=useState("")
 
@@ -20,6 +21,21 @@ const Register = () => {
     const image = e.target.image.value;
 
     // console.log(email, password);
+
+
+    if(password.length < 6){
+      setError("Password must contain at least 6 characters")
+      return
+  }
+ 
+  if(!/[a-z]/.test(password)){
+      setError("Password must contain at least one lowercase letter")
+      return;
+  }
+  if(!/[A-Z]/.test(password)){
+      setError("Password must contain at least one uppercase letter")
+      return;
+  }
 
 
     registerUser(email, password).then(() => {
@@ -42,6 +58,26 @@ const Register = () => {
     .catch((err) => {
       setError("Registration failed. Please try again.");
       console.error(err);
+    });
+  };
+
+  const handleGoogleLogIn = () => {
+    signInWithGoogle().then((res) => {
+      console.log(res);
+      navigate('/');
+    })
+    .catch(() => {
+      toast.error('Something went wrong. Please try again.', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Zoom, 
+      });
     });
   };
   return (
@@ -125,6 +161,16 @@ const Register = () => {
                 </Link>
               </h2>
             </form>
+            <div className="divider text-primary font-bold text-xl">OR</div>
+            <div className="space-y-4">
+              <button
+                onClick={handleGoogleLogIn}
+                className="pb-8 w-full flex items-center justify-center gap-2"
+              >
+                <img src={googleLogo} alt="Google" className="w-6 h-6" />
+                Continue with Google
+              </button>
+            </div>
             {
               error && <p className="text-red-900">{error}</p>
             }

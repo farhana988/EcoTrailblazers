@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -12,6 +13,7 @@ import {
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase.init";
+// import { ToastContainer } from "react-toastify";
 export const authContext = createContext();
 const AuthProvider = ({children}) => {
 
@@ -53,6 +55,12 @@ const manageProfile = (name,image)=>{
     })
 }
 
+// forget password 
+
+const forgetPass = (email)=>{
+  return sendPasswordResetEmail(auth,email)
+}
+
 
 
   const authInfo = {
@@ -63,7 +71,8 @@ const manageProfile = (name,image)=>{
     signInWithGoogle,
     handleSignOut,
     manageProfile,
-    loading
+    loading,
+    forgetPass 
   };
 
   useEffect(() => {

@@ -11,6 +11,7 @@ import AllBlogs from "../components/AllBlogs";
 import PrivateRoute from "./PrivateRoute";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import ForgotPassword from "../components/ForgetPassword";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
       {
         path: "/reg",
         element:<Register></Register>,
+      },
+      {
+        path: "/forgetPassword",
+        element: <ForgotPassword></ForgotPassword>,
+     
       },
     ],
   },
