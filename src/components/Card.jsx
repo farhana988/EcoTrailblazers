@@ -20,7 +20,7 @@ function Card({ singleData }) {
       <div className="card-body">
         <h2 className="card-title ">{adventure_title}</h2>
 
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc pl-6 gap-1 flex flex-col flex-grow">
           {eco_friendly_features.map((feature, index) => (
             <li key={index} className="text-sm text-gray-700">
              {feature}

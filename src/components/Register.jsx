@@ -149,6 +149,9 @@ const Register = () => {
                   required
                 />
               </div>
+              {
+              error && <p className="text-red-900">{error}</p>
+            }
               <div className="form-control mt-6">
                 <button className="btn  bg-primary text-white  font-bold text-2xl">Register</button>
               </div>
@@ -171,9 +174,7 @@ const Register = () => {
                 Continue with Google
               </button>
             </div>
-            {
-              error && <p className="text-red-900">{error}</p>
-            }
+           
           </div>
         </div>
       </div>

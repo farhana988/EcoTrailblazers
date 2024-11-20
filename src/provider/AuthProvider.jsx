@@ -16,6 +16,7 @@ import { auth } from "../firebase.init";
 // import { ToastContainer } from "react-toastify";
 export const authContext = createContext();
 const AuthProvider = ({children}) => {
+  
 
   const googleProvider = new GoogleAuthProvider();
 
@@ -48,12 +49,18 @@ const handleSignOut = ()=>{
 
 //   update profile
 
-const manageProfile = (name,image)=>{
-    return updateProfile(auth.currentUser,{
-        displayName:name,
-        photoURL:image
-    })
-}
+const manageProfile = async (name, image) => {
+  try {
+    await updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: image,
+    });
+    const updatedUser = { ...auth.currentUser, displayName: name, photoURL: image };
+    setUser(updatedUser);
+  } catch (error) {
+    console.error("Error updating profile:", error);
+  }
+};
 
 // forget password 
 

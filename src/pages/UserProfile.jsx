@@ -2,9 +2,15 @@
 
 import { useContext } from "react";
 import { authContext } from "../provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import 'animate.css';
 const UserProfile = () => {
+  const location =useLocation()
+  if(location.pathname==='/userProfile')
+        
+      { document.title= 'EcoTrailblazers | User Profile' }
+
+
   const { user } = useContext(authContext);
   const navigate = useNavigate();
 

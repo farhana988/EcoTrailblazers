@@ -1,8 +1,13 @@
 import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../provider/AuthProvider";
 
 const UpdateProfile = () => {
+  const location =useLocation()
+  if(location.pathname==='/updateProfile')
+        
+      { document.title= 'EcoTrailblazers | Update Profile' }
+      
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [error, setError] = useState("");
