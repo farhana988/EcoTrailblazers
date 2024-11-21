@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className=' absolute -top-3 left-3 -rotate-12'>
 
           <img className='w-14 animate__animated animate__fadeInTopLeft animate__infinite
-          animate__slower animate__delay-5s' src={logo} alt="" />
+          animate__slower ' src={logo} alt="" />
           </div>
           <Link to="/" className="font-bold text-primary text-2xl md:text-3xl lg:text-5xl
            ml-10 z-10

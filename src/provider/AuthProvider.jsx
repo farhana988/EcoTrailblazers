@@ -84,7 +84,7 @@ const forgetPass = (email)=>{
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      // console.log(currentUser)
+    
       if (currentUser) {
         setUser(currentUser);
       } else {

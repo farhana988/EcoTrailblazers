@@ -6,9 +6,7 @@ import Heading from "./Heading";
 
 const Blogs = () => {
   const {blogData} = useLoaderData();
-  // const blogData = data.blogData;
-  // console.log(blogData)
-
+  
   return (
     <div className="px-8 lg:px-0  py-10 ">
       <div className="container mx-auto">

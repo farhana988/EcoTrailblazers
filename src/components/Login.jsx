@@ -19,9 +19,9 @@ const Login = () => {
     const password = e.target.password.value;
 
     signIn(email, password)
-      .then((res) => {
+      .then(() => {
         navigate(location.state?.from || '/');
-        console.log(res);
+     
       })
       .catch(() => {
         toast.error('Something went wrong. Please try again.', {
@@ -40,8 +40,8 @@ const Login = () => {
 
   const handleGoogleLogIn = () => {
     signInWithGoogle()
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+     
         navigate(location.state?.from || '/');
       })
       .catch(() => {

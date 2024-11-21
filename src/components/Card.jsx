@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 function Card({ singleData }) {
-  // console.log(typeof singleData)
+
   const { adventure_title, image, eco_friendly_features, id } = singleData;
   return (
     <div

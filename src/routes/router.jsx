@@ -32,7 +32,6 @@ const router = createBrowserRouter([
           const subsRes =await fetch ("../subscription.json")
           const subsData = await subsRes.json()
 
-          // console.log(subsData)
           return{cardData, blogData, subsData}
         }
       },

@@ -9,7 +9,7 @@ const Heading = ({ title, subtitle }) => {
         '>
         <h1 className='text-3xl md:text-5xl lg:text-7xl font-bold mb-4 text-primary active
         animate__animated animate__heartBeat animate__infinite
-          animate__slower animate__delay-5s'>
+          animate__slower '>
           {title}
         </h1>
        

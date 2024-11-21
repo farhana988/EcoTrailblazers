@@ -20,7 +20,7 @@ const Register = () => {
     const name = e.target.name.value;
     const image = e.target.image.value;
 
-    // console.log(email, password);
+ 
 
 
     if(password.length < 6){
@@ -62,8 +62,8 @@ const Register = () => {
   };
 
   const handleGoogleLogIn = () => {
-    signInWithGoogle().then((res) => {
-      console.log(res);
+    signInWithGoogle().then(() => {
+   
       navigate('/');
     })
     .catch(() => {

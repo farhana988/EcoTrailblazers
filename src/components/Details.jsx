@@ -19,7 +19,7 @@ const Details = () => {
     eco_friendly_features,
     max_group_size,
     special_instructions,} = useLoaderData();
-  // console.log(id)
+  
 
   const [showModal, setShowModal] = useState(false);
 
