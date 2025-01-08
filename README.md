@@ -49,9 +49,9 @@ This project uses the following dependencies:
 Follow these steps to run this project on your local machine:
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/username/criticizeit.git
-   ```
+```bash
+git clone https://github.com/farhana988/EcoTrailblazers.git
+```
 2. **Install dependencies:** First, make sure you have Node.js installed. Then, run the following command to install all the necessary dependencies:
  ```bash
 npm install
